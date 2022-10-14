@@ -1,1 +1,1 @@
-Copyright © 2022 Emily Ridge • Galway based Freelance Web Designer & Developer
+Copyright © 2022 Mohammad Wasim Halim • Galway based Freelance Web Designer & Developer
