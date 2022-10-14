@@ -1,10 +1,26 @@
 import Head from 'next/head'
-import { Button } from "@material-tailwind/react";
-
+import { useState } from 'react';
+import Contact from '../components/Contact';
+import HomePage from '../components/Home'
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 export default function Home() {
+  const [color, setColor] = useState("black");
+  
+ 
   return (
-    <div>
-        <Button>WElcome</Button>
+    <div className='scroll-smooth'>
+    <Head>
+      <title>Portfolio</title>
+      <meta name="description" content="Web Developer" />
+      <meta name="keywords" content="Web Developer, Software Developer, Backend Developer, Frontend Developer,Freelancer,Content management system (CMS) creator" />
+      <meta name="author" content="Mohammad Wasim Halim" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
+        <HomePage />
+        <Skills />
+        <Projects />
+        <Contact />
     </div>
   )
 }
