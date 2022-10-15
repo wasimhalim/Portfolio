@@ -10,9 +10,9 @@ function CopyWrite() {
        <h1 className='font-semibold text-white'>Copyright © 2022 Mohammad Wasim Halim •  Freelance Web Designer & Developer</h1>
        </div>
        <ul className='flex flex-row items-center justify-center gap-4 pt-4 text-2xl text-emerald-500'>
-        <li><a href="https://www.facebook.com/wasimhalim007/" target="_blank"><FaFacebook/></a></li>
-        <li><a href="https://twitter.com/WasimHalim007" target="_blank"><FaTwitter/></a></li>
-        <li><a href="https://github.com/wasimhalim" target="_blank"><FaGithubSquare/></a></li>
+        <li className='cursor-pointer' onClick={()=>window.open("https://www.facebook.com/wasimhalim007/",'_blank')}><FaFacebook/></li>
+        <li className='cursor-pointer' onClick={()=>window.open("https://twitter.com/WasimHalim007",'_blank')}><FaTwitter/></li>
+        <li className='cursor-pointer' onClick={()=>window.open("https://github.com/wasimhalim",'_blank')}><FaGithubSquare/></li>
        </ul>
     </div>
   )

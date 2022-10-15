@@ -10,8 +10,8 @@ function HomePage() {
         <div className='flex flex-row flex-wrap items-center justify-center w-full gap-10 p-24 text-4xl font-extrabold text-center bg-gray-800'>
            
             <div >
-                        <h1 className='text-white'>Hello, I'm <span className='text-emerald-500' >Mohammad Wasim Halim</span></h1>
-                    <h1 className='text-white'> I'm a</h1>
+                        <h1 className='text-white'>Hello, I&apos;m <span className='text-emerald-500' >Mohammad Wasim Halim</span></h1>
+                    <h1 className='text-white'> I&apos;m a</h1>
                         <h1 className='text-emerald-500 '>
                                 <span> <Typewriter
                             options={{
