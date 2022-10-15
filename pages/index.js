@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useState } from 'react';
 import Contact from '../components/Contact';
+import CopyWrite from '../components/CopyWrite';
 import HomePage from '../components/Home'
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 export default function Home() {
-  const [color, setColor] = useState("black");
   
  
   return (
@@ -21,6 +21,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <CopyWrite />
     </div>
   )
 }
