@@ -46,7 +46,7 @@ function Contact() {
                         <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}  className='h-10 p-2 font-semibold rounded-md outline-none w-96' placeholder='Email...' required/>
                       </div>
                       <div className='p-2'>
-                        <textarea value={message} onChange={(e)=>setMessage(e.target.vlaue)} placeholder='Message' id="" cols="20" rows="5" className='p-2 rounded-md outline-none p-242 h- ont-semibold w-96' required></textarea>
+                        <textarea value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Message' id="" cols="20" rows="5" className='p-2 rounded-md outline-none p-242 h- ont-semibold w-96' required></textarea>
                        
                       </div>
                       
