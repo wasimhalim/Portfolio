@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import {supabase} from '../config/supabase'
 function Contact() {
       const [name, setName] = useState("")
@@ -6,7 +6,9 @@ function Contact() {
       const [message, setMessage] = useState("")
       const [clickStatus, setClickStatus] = useState(false)
       const [succeessMessageStatus, setSucceessMessageStatus] = useState(false)
+      const textAreaValue=useRef(null)
       const handleForm=async (browser)=>{
+        let message =textAreaValue.current.value
         setClickStatus(true)
           browser.preventDefault()
           const {status}=await supabase.from("messages")
@@ -15,7 +17,7 @@ function Contact() {
               setClickStatus(false)
               setName("")
               setEmail("")
-              setMessage("")
+              textAreaValue.current.value=''
               setSucceessMessageStatus(true)
               setTimeout(()=>{
                 setSucceessMessageStatus(false)
@@ -46,7 +48,7 @@ function Contact() {
                         <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}  className='h-10 p-2 font-semibold rounded-md outline-none w-96' placeholder='Email...' required/>
                       </div>
                       <div className='p-2'>
-                        <textarea value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Message' id="" cols="20" rows="5" className='p-2 rounded-md outline-none p-242 h- ont-semibold w-96' required></textarea>
+                        <textarea ref={textAreaValue}  placeholder='Message' id="" cols="20" rows="5" className='p-2 rounded-md outline-none p-242 h- ont-semibold w-96' required></textarea>
                        
                       </div>
                       
