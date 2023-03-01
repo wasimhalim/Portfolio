@@ -7,7 +7,7 @@ function CopyWrite() {
   return (
     <div className='flex flex-col p-4 text-center bg-gray-800 '>
        <div>
-       <h1 className='font-semibold text-white'>Copyright © 2022 Mohammad Wasim Halim •  Freelance Web Designer & Developer</h1>
+       <h1 className='font-semibold text-white'>Copyright © 20223 Mohammad Wasim Halim •  Full Stack Developer</h1>
        </div>
        <ul className='flex flex-row items-center justify-center gap-4 pt-4 text-2xl text-emerald-500'>
         <li className='cursor-pointer' onClick={()=>window.open("https://www.facebook.com/wasimhalim007/",'_blank')}><FaFacebook/></li>
